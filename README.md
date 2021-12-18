@@ -1,1 +1,8 @@
-# ShanghaiTech_CS181_Project_LOL_Winner_Prediction
+# ShanghaiTech CS181 Project LOL Winner Prediction
+***Author:YihangLian, YiwenWu, XinyangXiong, ShiboYu, JuntingLv***
+
+### Introduction
+
+### Details
+
+### Results
