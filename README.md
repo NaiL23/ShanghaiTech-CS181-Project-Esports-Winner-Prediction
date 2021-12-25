@@ -1,4 +1,4 @@
-# ShanghaiTech CS181 Project: ML-based LOL Esports Winner Prediction
+# ShanghaiTech CS181 Project: ML-based Esports Winner Prediction for League of Legends Pro Matches
 **Group Members: Lian Yihang, Wu Yiwen, Xiong Xinyang, Yu Shibo, Lv Junting** 
 
 ## Introduction
