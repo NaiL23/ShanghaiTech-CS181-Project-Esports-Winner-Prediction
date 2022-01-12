@@ -19,12 +19,24 @@
 
 ### Naive Bayesis: Predict based on pure champion lineup
 
-Result: 0.54 on 2021 Esport Dataset 
+Result: 0.54 on 2021 Esports Dataset 
 
 ### Logistic Regression: Predict based on statistics at early game stage (15-min)
 
-Result: 0.75 on 2021 Esport Dataset 
+Result: 0.75 on 2021 Esports Dataset 
+
+
 
 ### Recurrent Neural Network: Real-time prediction
+
+Result on 2015-2018 Esports Dataset: 
+
+| Timesteps | RNN Accuracy | LSTM RNN Accuracy |
+| --------- | ------------ | ----------------- |
+| 0-10min   |              | 0.65              |
+| 0-15min   |              | 0.73              |
+| 0-20min   |              |                   |
+
+0.73  
 
 ## Results & Thoughts
