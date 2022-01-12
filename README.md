@@ -15,6 +15,9 @@
   - gold diff & dragons & towers & kill at each time step
   - champion lineup & BP
   
+
+
+
 ## Methods
 
 ### Naive Bayesis: Prediction based on pure champion lineup
@@ -23,7 +26,7 @@
 
 |       | 2021 Dataset | 2015-2018 Dataset |
 | ----- | ------------ | ----------------- |
-| Accuracy | 0.54 | 0.52 |
+| Accuracy | 0.540 | 0.527 |
 
 
 
@@ -31,26 +34,33 @@
 
 #### Result
 
-|       | 2021 Dataset | 2015-2018 Dataset |
-| ----- | ------------ | ----------------- |
-| 10min |              |                   |
-| 15min | 0.75         |                   |
+|                   | lineup only | golddiff at 15min only | golddiff/tower/dragon/kill at 15min |
+| ----------------- | ----------- | ---------------------- | ----------------------------------- |
+| 2021 Dataset      | 0.541       | 0.760                  | /                                   |
+| 2015-2018 Dataset | 0.532       | 0.698                  | 0.723                               |
 
 
 
 ### Recurrent Neural Network: Real-time prediction by statistics
 
+Capture 7 features per time step:
+
+- `golddiff`: difference in team total gold
+- `dragondiff`: difference in number of dragons killed
+-  `barondiff`: difference in number of barons killed
+-  `heralddiff`: difference in number of heralds killed
+-  `towerdiff`: difference in number of enemy towers destroyed
+-  `inhibitordiff`: difference in number of enemy inhibitors destroyed
+-  `killdiff`: difference in number of enemy champions killed
+
 #### Result on 2015-2018 Esports Dataset
 
 | Timesteps | RNN Accuracy | LSTM RNN Accuracy |
 | --------- | ------------ | ----------------- |
-| 0-5min    | 0.56         | 0.58              |
-| 0-10min   | 0.66         | 0.65              |
-| 0-15min   | 0.72         | 0.73              |
-| 0-20min   | 0.76         | 0.77              |
-| 0-25min   | 0.78         | 0.80              |
-| 0-30min   |              |                   |
+| 0-5min    | 0.580        | 0.589             |
+| 0-10min   | 0.665        | 0.667             |
+| 0-15min   | 0.731        | 0.739             |
+| 0-20min   | 0.773        | 0.774             |
+| 0-25min   | 0.827        | 0.829             |
+| 0-30min   | 0.844        | 0.850             |
 
-
-
-## Results & Thoughts
